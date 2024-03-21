@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    /*background-image: linear-gradient(rgba(0,0,0,0.75),
+    rgba(0,0,0,0.75)), url(background.jpeg);*/
+    background-color: #005D97;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*navbar*/
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 120px;
+    /*cursor: pointer;*/
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #F6BA27;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: .5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+/*fin navbar*/
+
+.container{
+    display: flex;
+}
+
+.leftStuff{
+display: grid;
+grid-template-rows: repeat(2, 200px);
+grid-template-columns: repeat(3, 250px);
+grid-gap: 10px;
+padding-left: 100px;
+padding-top: 100px;
+position: relative;
+text-align: center;
+}
+  
+.square {
+width: 180px;
+height: 180px;
+background-color: #F6BA27;
+display: flex;
+justify-content: center;
+align-items: center;
+color: black;
+font-size: 16px;
+font-weight: bold;
+border-radius: 15px;
+padding-bottom: 120px;
+}
+
+.leftStuff h1{
+position: absolute;
+top: 0;
+left: 23%;
+margin-top: -35px;
+font-size: 70px;
+color: white;
+}
+
+.square {
+width: 180px;
+height: 180px;
+background-color: #F6BA27;
+display: flex;
+justify-content: center;
+align-items: center;
+color: black;
+font-size: 16px;
+font-weight: bold;
+border-radius: 15px;
+padding-bottom: 120px;
+}
+
+.giantSquare{
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    flex-direction: column;
+    background-color: #F6BA27;
+    border-radius: 15px;
+    margin-bottom: 17.5px;
+}
+  
+.rectangle {
+    width: 550px;
+    height: 80px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.giantSquare h1{
+    margin-top: -100px;
+    padding-bottom: 10px;
+}
+
+.giantSquare .nameData{
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-gap: 225px;
+    padding-bottom: 5px;
+}
